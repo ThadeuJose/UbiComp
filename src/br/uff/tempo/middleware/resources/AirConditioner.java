@@ -15,12 +15,12 @@ public class AirConditioner extends ResourceAgent implements IAirConditioner {
 	private int potenciaAtual;
 	private boolean ligado;
 
-	public AirConditioner(String name, String type, String rans) {
-		super(name,"br.uff.tempo.middleware.resources.Thermostat", rans);
+	public AirConditioner(String name, String rans) {
+		super(name,"br.uff.tempo.middleware.resources.AirConditioner", rans);
 	}
 	
 	public AirConditioner(String name, String rans, Position position) {
-		super(name, "br.uff.tempo.middleware.resources.Thermostat", rans, position);
+		super(name, "br.uff.tempo.middleware.resources.AirConditioner", rans, position);
 	}
 
 	

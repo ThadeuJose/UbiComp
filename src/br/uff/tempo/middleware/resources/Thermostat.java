@@ -11,7 +11,7 @@ public class Thermostat extends ResourceAgent implements IThermostat {
 	
 	private int temperature;
 
-	public Thermostat(String name, String type, String rans) {
+	public Thermostat(String name, String rans) {
 		super(name,"br.uff.tempo.middleware.resources.Thermostat", rans);
 	}
 	
