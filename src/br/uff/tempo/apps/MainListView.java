@@ -20,10 +20,12 @@ import br.uff.tempo.apps.prenda.tracking.PrendaTrackingView;
 import br.uff.tempo.apps.reminder.ReminderActivity;
 import br.uff.tempo.apps.rule.RuleFactory;
 import br.uff.tempo.apps.rule.RuleManager;
+import br.uff.tempo.apps.simulators.airconditioner.AirConditionerView;
 import br.uff.tempo.apps.simulators.bed.BedView;
 import br.uff.tempo.apps.simulators.creator.SimulCreatorActivity;
 import br.uff.tempo.apps.simulators.lamp.LampView;
 import br.uff.tempo.apps.simulators.stove.StoveView;
+import br.uff.tempo.apps.simulators.thermostat.ThermostatView;
 import br.uff.tempo.apps.simulators.tracking.TrackingView;
 import br.uff.tempo.apps.simulators.tv.TvView;
 import br.uff.tempo.apps.tictactoe.TicTacToe;
@@ -123,6 +125,12 @@ public class MainListView extends ListActivity {
 					startActivity(intent);
 				} else if (item.equals("Prenda")) {
 					Intent intent = new Intent(MainListView.this, PrendaTrackingView.class);
+					startActivity(intent);
+				}else if(item.equals("Ar Condicionado")){
+					Intent intent = new Intent(MainListView.this, AirConditionerView.class);
+					startActivity(intent);
+				}else if(item.equals("Termostato")){
+					Intent intent = new Intent(MainListView.this, ThermostatView.class);
 					startActivity(intent);
 				} else {
 					Toast.makeText(MainListView.this, "Não existe agente para este item: " + item.toString(), Toast.LENGTH_SHORT).show();

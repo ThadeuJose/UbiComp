@@ -45,6 +45,8 @@
         <item name="item_Cel">Celular</item>
         <item name="item_Lamp">Lampada</item>
         <item name="item_">Tablet</item>
+        <item name="item_airconditioner">Ar Condicionado</item>
+        <item name="item_thermostat">Termostato</item>
         <item name="item_stove">Fogao</item>
         <item name="item_pc">Computador</item>
         <item name="item_radio">Radio</item>
