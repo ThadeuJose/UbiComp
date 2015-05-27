@@ -130,7 +130,7 @@ public class CounterApp extends Activity implements IChooser, IListGetter {
 	public void chooseClick(View v) {
 
 		MiddlewareOperation m = new MiddlewareOperation(this, ResourceAgent.type(Lamp.class));
-		m.execute(null);
+		m.execute("");
 		
 	}
 	

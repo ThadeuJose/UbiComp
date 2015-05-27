@@ -649,7 +649,7 @@ public class MapActivity extends SimpleBaseGameActivity implements
 			// ("//")
 			MiddlewareOperation m = new MiddlewareOperation(this, this, "//",
 					IResourceDiscovery.rans);
-			m.execute(null);
+			m.execute("");
 
 			// An external resource... we must exit this method, not only
 			// the 'switch case', because we don't know what is the resource

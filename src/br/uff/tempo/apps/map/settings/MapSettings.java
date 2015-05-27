@@ -45,7 +45,7 @@ public class MapSettings extends PreferenceActivity implements IListGetter, ICho
 		addPreferencesFromResource(R.xml.map_prefs);
 		
 		// Get the references to all registered resources
-		new MiddlewareOperation(this, this, "//", IResourceDiscovery.rans).execute(null);
+		new MiddlewareOperation(this, this, "//", IResourceDiscovery.rans).execute("");
 		
 		chooseResourceDialog = new ChooseResource(this);
 		stakeholderDialog = new ChooseResource(this);
@@ -95,7 +95,7 @@ public class MapSettings extends PreferenceActivity implements IListGetter, ICho
 		if (op == OP_UNREG) {
 			
 			new ResourceAgentStub(resource.getRans()).unregister();
-			new MiddlewareOperation(this, this, "//", IResourceDiscovery.rans).execute(null);
+			new MiddlewareOperation(this, this, "//", IResourceDiscovery.rans).execute("");
 			
 		// Setup the stakeholders from an Agent
 		} else if (op == OP_SETUP){

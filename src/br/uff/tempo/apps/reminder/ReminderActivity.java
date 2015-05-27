@@ -155,7 +155,7 @@ public class ReminderActivity extends Activity implements ITimeAndDateReceiver,
 
 		MiddlewareOperation mo = new MiddlewareOperation(this,
 				ResourceAgent.type(Person.class));
-		mo.execute(null);
+		mo.execute("");
 	}
 
 	// Called when user sets date and time in the dialog

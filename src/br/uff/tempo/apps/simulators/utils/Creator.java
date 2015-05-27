@@ -88,7 +88,7 @@ public class Creator implements IChooser, IListGetter, IDialogFinishHandler {
 	public void chooseResource(boolean canOpen) {
 		this.canOpen = canOpen;
 		op = CONECT;
-		new MiddlewareOperation(activity, this, "").execute(null);
+		new MiddlewareOperation(activity, this, "").execute("");
 	}
 
 	/**
@@ -115,7 +115,7 @@ public class Creator implements IChooser, IListGetter, IDialogFinishHandler {
 	
 	public void createAllResources() {
 		loadSprites = true;
-		new MiddlewareOperation(activity, this, "").execute(null);		
+		new MiddlewareOperation(activity, this, "").execute("");		
 	}
 
 	/**
